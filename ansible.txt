@@ -1,0 +1,23 @@
+ssh -i "docker321.pem" ubuntu@ec2-13-234-32-28.ap-south-1.compute.amazonaws.com
+ssh -i "docker321.pem" ubuntu@ec2-13-234-32-28.ap-south-1.compute.amazonaws.com
+MASTER vi /etc/sudoers
+    2  vi /etc/ssh/ssh_config
+    3  vi /etc/ssh/sshd_config
+    4  service sshd restart
+    5  service ssh restart
+    6  ssh ansible@localhost
+    7  history
+    ssh ansible@172.31.18.117
+    2  history
+
+
+
+NODE
+vi /etc/ssh/sshd_config
+    2  service ssh restart
+    3  adduser ansible
+    4  vi /etc/sudoers
+    5  ssh ansible@localhost
+    6  vi /etc/sudoers
+    7  ssh ansible@localhost
+    8  history
